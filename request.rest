@@ -1,0 +1,51 @@
+GET http://localhost:5000/employee
+
+###
+GET http://localhost:5000/employee/3
+
+###
+POST http://localhost:5000/employee
+Content-Type: application/json
+
+{
+    "nama": "Hidayatullah",
+    "tgl_lahir": "2002-03-24T18:25:43.511Z",
+    "tempat_lahir": "Bulukumba",
+    "jenis_kelamin": "Laki-laki",
+    "email": "daya.hidayatullah024@gmail.com",
+    "no_hp": "082348050512",
+    "status": "active",
+    "alamat": "Bulukumba, Sulawesi Selatan",
+    "keterangan": "Mahasiswa",
+    "departemens": "Pengembangan",
+    "departemenId": 1,
+    "jabatans": "Ketua",
+    "jabatanId": 1,
+    "problemscw": "Korslet",
+    "problemscwsId": 1
+}
+
+###
+PATCH http://localhost:5000/employee/5
+Content-Type: application/json
+
+{
+                "nama": "Asraruddin",
+                "tgl_lahir": "2004-08-18T18:25:43.511Z",
+                "tempat_lahir": "Bulukumba",
+                "jenis_kelamin": "Laki-laki",
+                "email": "Asraruddin@gmail.com",
+                "no_hp": "081234567892",
+                "status": "active",
+                "alamat": "Bulukumba, Sulawesi Selatan",
+                "keterangan": "sering bolos nih...",
+                "departemens": "Pengembangan",
+                "departemenId": 1,
+                "jabatans": "Wakil",
+                "jabatanId": 1,
+                "problemscw": "Korslet",
+                "problemscwsId": 1
+}
+
+###
+DELETE http://localhost:5000/employee/4
